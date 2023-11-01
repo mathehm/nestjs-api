@@ -1,0 +1,35 @@
+# Attention
+# You need to have the REST Client extension installed
+
+
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/courses
+
+###
+GET http://localhost:3000/courses/3
+
+###
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+  "name": "category test 3",
+  "description": "description test 3",
+  "tags": ["tag a", "tag b"]
+}
+
+###
+PATCH http://localhost:3000/courses/4
+Content-Type: application/json
+
+{
+  "id": "04",
+  "name": "atualiza o 4 ATUALIZADO",
+  "description": "description 4"
+  "tags": ["tag a", "tag b"]
+}
+
+###
+DELETE http://localhost:3000/courses/2
